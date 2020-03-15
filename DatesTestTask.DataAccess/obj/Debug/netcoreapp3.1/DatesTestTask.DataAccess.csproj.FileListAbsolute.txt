@@ -1,0 +1,4 @@
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.DataAccess\bin\Debug\netcoreapp3.1\DatesTestTask.Core.dll
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.DataAccess\obj\Debug\netcoreapp3.1\DatesTestTask.DataAccess.csprojAssemblyReference.cache
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.DataAccess\obj\Debug\netcoreapp3.1\DatesTestTask.DataAccess.AssemblyInfoInputs.cache
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.DataAccess\obj\Debug\netcoreapp3.1\DatesTestTask.DataAccess.AssemblyInfo.cs

@@ -1,0 +1,10 @@
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Core\bin\Debug\netcoreapp3.1\DatesTestTask.Core.deps.json
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Core\bin\Debug\netcoreapp3.1\DatesTestTask.Core.dll
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Core\obj\Debug\netcoreapp3.1\DatesTestTask.Core.csprojAssemblyReference.cache
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Core\obj\Debug\netcoreapp3.1\DatesTestTask.Core.AssemblyInfoInputs.cache
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Core\obj\Debug\netcoreapp3.1\DatesTestTask.Core.AssemblyInfo.cs
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Core\bin\Debug\netcoreapp3.1\DatesTestTask.Core.runtimeconfig.json
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Core\bin\Debug\netcoreapp3.1\DatesTestTask.Core.runtimeconfig.dev.json
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Core\bin\Debug\netcoreapp3.1\DatesTestTask.Core.pdb
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Core\obj\Debug\netcoreapp3.1\DatesTestTask.Core.dll
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Core\obj\Debug\netcoreapp3.1\DatesTestTask.Core.pdb
