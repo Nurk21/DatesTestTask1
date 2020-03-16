@@ -6,12 +6,13 @@ namespace DatesTestTask.DataAccess
 {
     public class DataContext: DbContext
     {
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<DatesRange> Ranges { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Data Source=LAPTOP-126LHOT8\\SQLEXPRESS; Initial Catalog=DatesTestTask;Integrated Security=True");
-                    }
+        }
 
     }
 }

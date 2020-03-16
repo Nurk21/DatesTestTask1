@@ -2,10 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using DatesTestTask.Common.Configurations;
+using DatesTestTask.DataAccess;
+using DatesTestTask.Services.Validators;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,7 +30,25 @@ namespace DatesTestTask.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            services.AddDbContext<DataContext>(options =>
+            {
+                options.UseSqlServer(connectionString);
+            }
+            ).AddEfUnitOfWork<DataContext>();
+
+         
+            //create AutoMapper configuration
+            var config = new MapperConfiguration(cfg => cfg.Configure());
+
+            IMapper mapper = config.CreateMapper();
+            services.AddSingleton(mapper);
+
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddControllers();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

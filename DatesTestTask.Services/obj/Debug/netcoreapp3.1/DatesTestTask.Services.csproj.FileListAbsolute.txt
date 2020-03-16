@@ -3,3 +3,13 @@ D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\bin\Debug\n
 D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\obj\Debug\netcoreapp3.1\DatesTestTask.Services.csprojAssemblyReference.cache
 D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\obj\Debug\netcoreapp3.1\DatesTestTask.Services.AssemblyInfoInputs.cache
 D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\obj\Debug\netcoreapp3.1\DatesTestTask.Services.AssemblyInfo.cs
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\bin\Debug\netcoreapp3.1\DatesTestTask.Services.deps.json
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\bin\Debug\netcoreapp3.1\DatesTestTask.Services.runtimeconfig.json
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\bin\Debug\netcoreapp3.1\DatesTestTask.Services.runtimeconfig.dev.json
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\bin\Debug\netcoreapp3.1\DatesTestTask.Services.dll
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\bin\Debug\netcoreapp3.1\DatesTestTask.Services.pdb
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\bin\Debug\netcoreapp3.1\DatesTestTask.Core.pdb
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\bin\Debug\netcoreapp3.1\DatesTestTask.DataAccess.pdb
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\obj\Debug\netcoreapp3.1\DatesTestTask.Services.csproj.CopyComplete
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\obj\Debug\netcoreapp3.1\DatesTestTask.Services.dll
+D:\progs\VisualStudioSolutions\DatesTestTask1\DatesTestTask.Services\obj\Debug\netcoreapp3.1\DatesTestTask.Services.pdb

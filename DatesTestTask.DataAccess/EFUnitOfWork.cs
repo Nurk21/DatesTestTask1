@@ -1,17 +1,19 @@
-﻿using AutoMapper.Configuration;
-using DatesTestTask.Core.Data;
+﻿using DatesTestTask.Core.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace DatesTestTask.DataAccess
 {
     public class EfUnitOfWork<TContext> : IUnitOfWork<TContext>, IRepositoryFactory, IDisposable
-        where TContext : DbContext
+         where TContext : DbContext
     {
         private readonly TContext _context;
         private readonly IConfiguration _config;
@@ -44,7 +46,14 @@ namespace DatesTestTask.DataAccess
 
         public virtual async Task<int> SaveChangesAsync()
         {
+            try
+            {
                 return await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new Exception();
+            }
         }
 
         public virtual async Task InsertBulkAsync(DataTable data, string tableName)
@@ -74,6 +83,7 @@ namespace DatesTestTask.DataAccess
         {
             var connectionString = _config.GetSection("ConnectionStrings").GetChildren().FirstOrDefault(x => x.Key == "DefaultConnection")?.Value;
             return new SqlConnection(connectionString);
+            
         }
 
         protected virtual void Dispose(bool disposing)
@@ -90,3 +100,4 @@ namespace DatesTestTask.DataAccess
         }
     }
 }
+

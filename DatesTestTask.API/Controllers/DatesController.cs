@@ -25,12 +25,12 @@ namespace DatesTestTask.API.Controllers
         }
 
        
-        [HttpGet("")]
-        public IEnumerable<DatesRange> Get()
-        {
+        //[HttpGet("")]
+        //public IEnumerable<DatesRange> Get()
+        //{
             
-            return Ok();
+        //    return Ok();
 
-        }
+        //}
     }
 }
