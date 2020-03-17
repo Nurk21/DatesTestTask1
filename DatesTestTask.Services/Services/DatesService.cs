@@ -11,35 +11,34 @@ using DatesTestTask.Services.Validators;
 
 namespace DatesTestTask.Services.Services
 {
-    class DatesRangeProcessing : IDatesRangeProcessing
+    public interface IDatesService
+    {
+        Task CreateRangeAsync(DatesRangeDTO datesRangeDTO);
+        Task<List<DatesRange>> GetRangesAsync(DatesRangeDTO datesRangeDTO);
+    }
+    public class DatesService : IDatesService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private readonly IValidator _val;
+        private readonly IDateValidator _dateValidator;
 
-        public DatesRangeProcessing(
+        public DatesService(
             IUnitOfWork unitOfWork,
             IMapper mapper,
-            IValidator val)
+            IDateValidator dateValidator)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _val = val;
+            _dateValidator = dateValidator;
         }
-
-        public async Task<bool> CreateDatesRangeService(DatesRangeDTO datesRangeDTO)
-        {
-            
-            _val.CanCreate(datesRangeDTO);
-
+        public async Task CreateRangeAsync(DatesRangeDTO datesRangeDTO)
+        {            
+            _dateValidator.CanCreate(datesRangeDTO);
             var result = _mapper.Map<DatesRange>(datesRangeDTO);
-
             _unitOfWork.GetRepository<DatesRange>().Insert(result);
-            await _unitOfWork.SaveChangesAsync();
-            return true;
+            await _unitOfWork.SaveChangesAsync();          
         }
-
-        public async Task<List<DatesRange>> GetRangeIntersectionService(DatesRangeDTO datesRangeDTO)
+        public async Task<List<DatesRange>> GetRangesAsync(DatesRangeDTO datesRangeDTO)
         {
             return await _unitOfWork.GetRepository<DatesRange>().TableNoTracking.Where( t =>
                 (datesRangeDTO.From > t.From && datesRangeDTO.From < t.To && datesRangeDTO.To > t.To)||(datesRangeDTO.To > t.From && datesRangeDTO.To < t.To && datesRangeDTO.From < t.From)

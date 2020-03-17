@@ -6,8 +6,7 @@ namespace DatesTestTask.Services.DTO
 {
     public class DatesRangeDTO
     {
-        public DateTime From{ get; set; }
-        public DateTime To { get; set; }
-
+        public DateTime From { get; set; }
+        public DateTime To { get; set; }  
     }
 }

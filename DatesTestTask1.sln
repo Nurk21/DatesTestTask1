@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatesTestTask.DataAccess", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatesTestTask.Services", "DatesTestTask.Services\DatesTestTask.Services.csproj", "{9E022059-02F5-484C-80D4-391E0F08B3C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatesTestTaskTests", "DatesTestTaskTests\DatesTestTaskTests.csproj", "{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{9E022059-02F5-484C-80D4-391E0F08B3C9}.Release|x64.Build.0 = Release|Any CPU
 		{9E022059-02F5-484C-80D4-391E0F08B3C9}.Release|x86.ActiveCfg = Release|Any CPU
 		{9E022059-02F5-484C-80D4-391E0F08B3C9}.Release|x86.Build.0 = Release|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Debug|x64.Build.0 = Debug|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Debug|x86.Build.0 = Debug|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Release|x64.ActiveCfg = Release|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Release|x64.Build.0 = Release|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Release|x86.ActiveCfg = Release|Any CPU
+		{1578811A-5BB9-48B2-B6F8-97E5C6DBBF9A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
