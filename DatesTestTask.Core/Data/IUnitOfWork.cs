@@ -1,8 +1,4 @@
 ﻿using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DatesTestTask.Core.Data
@@ -13,7 +9,6 @@ namespace DatesTestTask.Core.Data
 
         Task<int> SaveChangesAsync();
 
-        Task InsertBulkAsync(DataTable data, string tableName);
 
         Task ExecuteQueryAsync(string query);
 

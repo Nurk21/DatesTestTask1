@@ -4,9 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 
@@ -55,23 +53,7 @@ namespace DatesTestTask.DataAccess
                 throw new Exception();
             }
         }
-
-        public virtual async Task InsertBulkAsync(DataTable data, string tableName)
-        {
-            var connection = this.CreateConnection();
-
-            using (connection)
-            {
-                using (var sqlBulk = new SqlBulkCopy(connection))
-                {
-                    connection.Open();
-                    sqlBulk.BulkCopyTimeout = 60;
-                    sqlBulk.DestinationTableName = tableName;
-                    await sqlBulk.WriteToServerAsync(data);
-                }
-            }
-
-        }
+        
 
         [Obsolete]
         public virtual async Task ExecuteQueryAsync(string query)
